@@ -63,6 +63,10 @@ class Utils
      * Strings functions :
      */
 
+    public function startsWith2(string $message, $starts) {
+        return ($message[(int)0] === $starts);
+    }
+    
     public static function stripSpace(string $string) : string{
         return preg_replace('/\s+/', '', $string);
     }
